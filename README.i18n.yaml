@@ -15,8 +15,8 @@
   en: d7fbbba70852c433
   zh: b1d8d953f9d82d8a
 /deepseek-ai-dsh-client-ui-release-notes/use-this-package:
-  en: a49d9ac64bffecb2
-  zh: 22e361c2625e8730
+  en: 030981d50dbc0f3f
+  zh: 568bb14cecc00705
 /deepseek-ai-dsh-client-ui-release-notes/model-experience:
   en: 7bf22bf0c3f552a3
   zh: 8973ef960c124c8a
@@ -24,5 +24,8 @@
   en: 51aead57b48662ed
   zh: 85b402640f5214a7
 /deepseek-ai-dsh-client-ui-release-notes/known-limitations-and-deferred-work:
-  en: d75de16852140438
-  zh: b2450498a3e2bd32
+  en: e829680ad7592d86
+  zh: 2cdfbd6bb4600ded
+/deepseek-ai-dsh-client-ui-release-notes/known-limitations-and-deferred-work/dev-note:
+  en: b7fbf1f393752f9b
+  zh: 967257a948997873

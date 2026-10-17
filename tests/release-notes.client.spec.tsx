@@ -31,8 +31,8 @@ describe('release notes page', () => {
     render(<ReleaseNotesSection {...({} as GlobalStandardProps)} t={t} useLocale={useLocale} close={() => {}} />)
     expect(screen.getByText('This installation is 0.1.7-rc.2.20260927.1')).toBeTruthy()
     // The dated build carries no Arya number, so it matches the newest line.
-    expect(screen.getByRole('heading', { name: /0\.1\.7-rc\.2\.AryaAI\.0\.5\.0/ }).closest('section')?.getAttribute('data-current')).toBe('true')
-    expect(screen.getAllByText('DeepSeek Harness 0.1.7-rc.2')).toHaveLength(5)
+    expect(screen.getByRole('heading', { name: /0\.1\.7-rc\.2\.AryaAI\.0\.6\.8/ }).closest('section')?.getAttribute('data-current')).toBe('true')
+    expect(screen.getAllByText('DeepSeek Harness 0.1.7-rc.2')).toHaveLength(14)
     // The 0.3.0 line repeats this bullet verbatim, so both entries carry it.
     expect(screen.getAllByText(/Right-click a workspace in the left panel/)).toHaveLength(2)
     // The older lines stay listed below the current one.

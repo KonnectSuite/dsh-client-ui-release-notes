@@ -2,22 +2,7 @@
 description: "Settings page that lists AryaAI version history, newest first, and marks the line this installation belongs to."
 kind: "package-reference"
 ---
-<!-- MIRROR NOTICE - added by the mirror, not part of the package. -->
 
-> ### Mirror of an AryaAI plugin package
->
-> `@deepseek-ai/dsh-client-ui-release-notes` is a plugin for **AryaAI**, a DeepSeek Harness fork. This repository holds
-> the package's source and its built output as they stand in the AryaAI workspace at
-> `0.1.7-rc.2`.
->
-> Its dependencies are published. `@deepseek-ai/dsh-*` at `0.1.7-rc.2` is on npm,
-> so a standalone build is possible once the manifest declares them. **Pin the
-> version**: the `latest` dist-tag points at an older release (`0.0.1-rc.1`), so
-> an unpinned `npm install @deepseek-ai/dsh-tools` resolves to a much older API.
->
-> In the monorepo this package lives at `packages/client/ui-release-notes`.
-
----
 # @deepseek-ai/dsh-client-ui-release-notes
 
 English | [中文](README.zh.md)
@@ -39,7 +24,9 @@ English | [中文](README.zh.md)
 
 Open Settings and choose Release notes. The page names the installed version, then each catalog entry. The entry this build belongs to is marked Current.
 
-Add a version in `src/catalog.ts`. Newest entries belong at the top, and the Chinese and English bullets stay in the same order. The desktop update dialog reads that same catalog.
+Add a version in `src/catalog.ts` before packaging a release. Newest entries belong at the top, and the Chinese and English bullets stay in the same order. The desktop update dialog and published update feed read that same catalog.
+
+The AryaAI 0.6.3 entry describes the updated Studio 5000 L5X SDK diagnostics, live tag reads, route checks, and download verification.
 
 -----
 
@@ -58,3 +45,15 @@ No direct effect. The page never reads or writes a model request.
 
 - **One catalog line covers every Arya build of that harness line** — `0.1.7-rc.2.AryaAI.0.0.2` and a dated build such as `0.1.7-rc.2.20260927.1` both show the `0.1.7-rc.2` note until that build has its own entry.
 - **The page does not install an update** — choosing a version only reads what changed. Installing stays with the desktop update offer.
+
+The Host program compiles the plugin entry and release catalog through `tsconfig.host.json`; the browser page uses `tsconfig.client.json`. The root config only combines these programs.
+
+<a id="dev-note"></a>
+### Dev Note
+
+<details>
+<summary>Maintainer context</summary>
+
+None.
+
+</details>
