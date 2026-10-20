@@ -1,3 +1,3 @@
 import { clientBundle } from '../tsdown.client.ts'
 
-export default clientBundle('@deepseek-ai/dsh-client-ui-release-notes', ['lib/types/index.js', 'lib/types/catalog.js'], { hostPhase: true })
+export default clientBundle(import.meta.dirname, ['lib/types/index.js', 'lib/types/catalog.js'], { hostPhase: true })
