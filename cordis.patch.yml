@@ -1,0 +1,7 @@
+# Settings page that lists AryaAI version history and release notes.
+#
+# This row is a profile-level bundle so a profile can switch it off without
+# removing the rest of the application shell.
+- insert:
+    - id: ui-release-notes
+      name: '@deepseek-ai/dsh-client-ui-release-notes'
