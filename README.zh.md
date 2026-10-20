@@ -1,6 +1,6 @@
 ---
 description: "设置页列出 AryaAI 的版本历史，新的在前，并标出当前安装所属的那一条。"
-kind: "package-reference"
+kind: "package-bundle"
 ---
 
 # @deepseek-ai/dsh-client-ui-release-notes

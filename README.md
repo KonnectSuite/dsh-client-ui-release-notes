@@ -1,6 +1,6 @@
 ---
 description: "Settings page that lists AryaAI version history, newest first, and marks the line this installation belongs to."
-kind: "package-reference"
+kind: "package-bundle"
 ---
 
 # @deepseek-ai/dsh-client-ui-release-notes
